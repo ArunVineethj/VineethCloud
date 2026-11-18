@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Arun Vineeth J – Personal Portfolio Application
 
 A full-stack personal portfolio for **Arun Vineeth J**, Junior DevOps Engineer, built with
@@ -385,3 +386,7 @@ A processed message has:
 ---
 
 *Built with ❤️ by Arun Vineeth J · Junior DevOps Engineer · Pudukkottai, Tamil Nadu, India*
+=======
+# VineethCloud
+A full-stack DevOps portfolio application built with React, Java , Apache Tomcat, MySQL, Memcached, and RabbitMQ, containerized using Docker Composed. and deployed at Kubernetes 🚀
+>>>>>>> d9141d87703fe6288db05050ba668c4ec3fe85a0
