@@ -1,0 +1,99 @@
+.projects {
+  background: var(--bg-primary);
+}
+
+.projects__loading { display: flex; justify-content: center; padding: 48px 0; }
+.projects__error   { text-align: center; color: #f87171; padding: 32px; }
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+/* Card */
+.projects__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease both;
+}
+
+.projects__card-accent {
+  height: 4px;
+  background: var(--gradient-main);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.projects__card:hover .projects__card-accent { opacity: 1; }
+
+.projects__card-body {
+  flex: 1;
+  padding: 28px 28px 20px;
+}
+
+.projects__number {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent-purple);
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.projects__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.projects__description {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.projects__techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.projects__tech-tag {
+  padding: 4px 12px;
+  background: rgba(124,58,237,0.1);
+  border: 1px solid rgba(124,58,237,0.2);
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #a78bfa;
+  font-family: var(--font-mono);
+}
+
+/* Footer */
+.projects__card-footer {
+  padding: 14px 28px 20px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  gap: 16px;
+}
+.projects__link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+.projects__link:hover           { color: var(--accent-purple); }
+.projects__link--demo:hover     { color: var(--accent-cyan); }
+
+@media (max-width: 600px) {
+  .projects__grid { grid-template-columns: 1fr; }
+}
